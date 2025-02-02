@@ -56,7 +56,7 @@ app.get("/", (req, res) => {
     console.log("Home route")
     res.status(404).json({
         success: false,
-        message: "This is the home route, go to http://localhost:3000/api/classify-number?number={any number of your choice} to try out this endpoint"
+        message: "This is the home route, go to https://number-classification-api-02.onrender.com/api/classify-number?number={any number of your choice} to try out this endpoint"
     })
 })
 

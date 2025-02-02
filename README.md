@@ -4,7 +4,7 @@
 This API classifies a number and returns its mathematical properties along with a fun fact.
 
 ## API Endpoint
-- **GET** `/api/classify-number?number=<number>`
+- **GET** `https://number-classification-api-02.onrender.com/api/v1/classify-number?number=<number>`
 
 ## Response Format (200 OK)
 ```json

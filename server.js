@@ -47,7 +47,7 @@ const getFunFact = async (num) => {
         const response = await axios.get(`http://numbersapi.com/${num}/math`);
         return response.data;
     } catch (error) {
-        return `No fun fact available for ${num}`;
+        return `Sorry, No fun fact available for ${num}`;
     }
 };
 
@@ -56,7 +56,7 @@ app.get("/", (req, res) => {
     console.log("Home route")
     res.status(404).json({
         success: false,
-        message: "This is the home route, go to https://number-classification-api-02.onrender.com/api/classify-number?number={any number of your choice} to try out this endpoint"
+        message: "This is the home route, you need to go to https://number-classification-api-02.onrender.com/api/classify-number?number={any number of your choice} to try out this endpoint"
     })
 })
 
